@@ -13,7 +13,10 @@ namespace Mission3TicTacToe
             string[] choices = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
             Boolean winner = false;
             int i = 0;
-            // Call Method Here
+
+            // Print Initial Board Here
+            Supporting support = new Supporting();
+            support.printBoard();
 
             while (winner == false)
             {
@@ -36,7 +39,9 @@ namespace Mission3TicTacToe
 
                 i = i + 1; // Incremenent Counter
 
-                // Call Method Here
+                // Print Board Here
+                support.printBoard();
+
             }
         }
     }
