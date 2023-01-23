@@ -26,8 +26,8 @@ namespace Mission3TicTacToe
         // and end the while loop for the whole program
         public (string, bool) checkWinner(string[] arr, Boolean winner)
         {
-            winner = true;
-          if (arr[0] == arr[1] && arr[1] == arr[2])
+            winner = true; 
+            if (arr[0] == arr[1] && arr[1] == arr[2])
             {
                 return ("You're the winner!", winner);
             }
@@ -65,7 +65,8 @@ namespace Mission3TicTacToe
             }
             else
             {
-                return ("Make your next move", winner = false);
+                winner = false;
+                return ("Make your next move", winner);
             }
         }
             
