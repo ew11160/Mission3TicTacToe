@@ -42,8 +42,12 @@ namespace Mission3TicTacToe
                 // Print Board Here
                 support.printBoard();
 
+                // Print Winner
+                (string nextPlay, bool iswWinner) = support.checkWinner();
+                Console.WriteLine(nextPlay);
+
             }
         }
     }
 }
-}
+
