@@ -16,7 +16,7 @@ namespace Mission3TicTacToe
 
             // Print Initial Board Here
             Supporting support = new Supporting();
-            support.printBoard();
+            support.printBoard(choices);
 
             while (winner == false)
             {
@@ -40,7 +40,7 @@ namespace Mission3TicTacToe
                 i = i + 1; // Incremenent Counter
 
                 // Print Board Here
-                support.printBoard();
+                support.printBoard(choices);
 
             }
         }
