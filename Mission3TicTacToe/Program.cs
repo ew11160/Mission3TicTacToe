@@ -6,7 +6,9 @@ namespace Mission3TicTacToe
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Supporting support = new Supporting(); // naming variable support as a new instance of supporting class
+
+            support.printBoard(); // need to compile this
         }
     }
 }
