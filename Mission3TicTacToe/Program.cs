@@ -24,6 +24,7 @@ namespace Mission3TicTacToe
 
                 if (i % 2 == 1)
                 {
+                    Console.WriteLine();
                     Console.WriteLine("Player 2, pick a position: ");
                     position = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,7 @@ namespace Mission3TicTacToe
                 }
                 else
                 {
+                    Console.WriteLine();
                     Console.WriteLine("Player 1, pick a position: ");
                     position = Convert.ToInt32(Console.ReadLine());
 
@@ -40,12 +42,13 @@ namespace Mission3TicTacToe
                 i = i + 1; // Incremenent Counter
 
                 // Print Board Here
+                Console.WriteLine();
                 support.printBoard(choices);
 
                 // Print Winner
-                (string nextPlay, bool iswWinner) = support.checkWinner();
+                (string nextPlay, bool isWinner) = support.checkWinner(choices,winner);
                 Console.WriteLine(nextPlay);
-
+                winner = isWinner;
             }
         }
     }
