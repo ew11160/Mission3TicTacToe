@@ -29,35 +29,91 @@ namespace Mission3TicTacToe
             winner = true; 
             if (arr[0] == arr[1] && arr[1] == arr[2])
             {
-                return ("You're the winner!", winner);
+                if (arr[0] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[3] == arr[4] && arr[4] == arr[5])
             {
-                return ("Winner do a funky dance", winner);
+                if (arr[3] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[6] == arr[7] && arr[7] == arr[8])
             {
-                return ("Winner take a bow!", winner);
+                if (arr[6] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[0] == arr[3] && arr[3] == arr[6])
             {
-                return ("Congratulations, you won!", winner);
+                if (arr[0] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[1] == arr[4] && arr[4] == arr[7])
             {
-                return ("Winner winner chicken dinner", winner);
+                if (arr[1] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[2] == arr[5] && arr[5] == arr[8])
             {
-                return ("Champion!", winner);
+                if (arr[2] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[0] == arr[4] && arr[4] == arr[8])
             {
-                return ("High Five! You won!", winner);
+                if (arr[0] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[2] == arr[4] && arr[4] == arr[6])
             {
-                return ("You hit the jackpot!", winner);
+                if (arr[2] == "X")
+                {
+                    return ("Player 1, You're the winner!", winner);
+                }
+                else
+                {
+                    return ("Player 2, You're the winner!", winner);
+                }
             }
             else if (arr[0] != "1" && arr[1] != "2" && arr[2] != "3" && arr[3] != "4" && arr[4] != "5" && arr[5] != "6" && arr[6] != "7" && arr[7] != "8" && arr[8] != "9")
             {
